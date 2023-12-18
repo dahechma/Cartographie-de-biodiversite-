@@ -1,0 +1,87 @@
+/* Reset CSS */
+body, h1, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: "Century Gothic", sans-serif;
+    background-color: #f7f2e4;
+    background-image: url(https://static.actu.fr/uploads/2019/10/Parcelles-agricoles-vues-du-ciel-%C2%A9-Tommy-Lee-Walker.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  /* Container Styles */
+  .conteneur {
+    width: 300px;
+    padding: 20px;
+    background-color: #f7f2e4;
+    border: 2px solid #333;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+  
+  /* Header Styles */
+  h1 {
+    color: #4f831b;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Paragraph Styles */
+  p {
+    margin: 5px 0;
+    color: #4f831b;
+  }
+  
+  /* Form Styles */
+  .form-group {
+    margin-bottom: 20px;
+  }
+/* Ajoutez ces styles à votre fichier CSS */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ajustez selon vos besoins */
+  }
+  
+  .form-group label {
+    text-align: left;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 5px; /* Ajustez selon vos besoins */
+  }
+/* Ajoutez ces styles à votre fichier CSS */
+.btn-primary {
+  width: 100%; /* Ajustez selon vos besoins */
+  font-size: 1em; /* Ajustez selon vos besoins */
+}
+
+/* Ajoutez ces styles pour centrer le bouton */
+.text-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Ajoutez ces styles pour ajuster le positionnement du formulaire dans le conteneur */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Ajoutez ces styles pour ajuster le positionnement du formulaire dans le conteneur */
+form {
+  width: 100%; /* Ajustez selon vos besoins */
+  max-width: 300px; /* Ajustez selon vos besoins */
+}
+    
