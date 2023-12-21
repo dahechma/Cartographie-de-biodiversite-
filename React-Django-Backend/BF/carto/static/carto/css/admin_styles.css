@@ -1,0 +1,61 @@
+/* yourapp/static/yourapp/css/admin_styles.css */
+
+/* Change the background color of the admin header */
+#header {
+    background-color: #3498db;
+}
+
+/* Change the color of the admin header text */
+#branding h1, #branding h2 {
+    color: #fff;
+}
+
+/* Style for the app and model names in the sidebar */
+.app-list .app-model a {
+    color: #3498db;
+    font-weight: bold;
+}
+
+/* Style for the add and change buttons */
+.addlink, .changelink {
+    color: #fff;
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+/* Style for the action buttons */
+.row-actions span {
+    background-color: #3498db;
+    border-color: #3498db;
+    color: #fff;
+}
+
+/* Style for the table headers */
+#result_list th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Style for the odd rows in the change list */
+#result_list tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+/* Style for the pagination */
+#pagination li a {
+    color: #3498db;
+}
+
+/* Style for the selected pagination page */
+#pagination li.active a {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Style for the filter dropdown */
+.related-widget-wrapper select {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Add more styles as needed */

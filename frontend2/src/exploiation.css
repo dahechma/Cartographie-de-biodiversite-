@@ -1,0 +1,9 @@
+conteneur1{
+    width: 300px;
+    padding: 20px;
+    background-color: #f7f2e4;
+    border: 2px solid #333;
+    border-radius: 10px;
+    margin: 100px ; /* Ajoutez une marge en haut de 20px, avec le reste inchangé */
+  
+}

@@ -1,0 +1,76 @@
+// AjoutExploitation.js
+import React, { useState } from 'react';
+import axios from 'axios';
+
+const AjoutExploitationForm = () => {
+  const [donnees, setDonnees] = useState({
+    name_parcelle: '',
+    surface: 0,
+    // Ajoutez d'autres champs en fonction de vos besoins
+  });
+
+  const envoyerDonnees = async (e) => {
+    e.preventDefault();
+    try {
+      const url = 'http://127.0.0.1:8000/ajout_parcelle/';
+      const reponse = await axios.post(url, donnees);
+      console.log(reponse.data);
+      // Ajoutez ici le code pour gérer la réponse, par exemple, afficher un message de succès
+    } catch (erreur) {
+      console.error('Erreur lors de l\'envoi des données :', erreur);
+      // Ajoutez ici le code pour gérer les erreurs, par exemple, afficher un message d'erreur
+    }
+  };
+
+  const handleChange = (e) => {
+    setDonnees({ ...donnees, [e.target.name]: e.target.value });
+  };
+
+  return (
+    <div className="container mt-5">
+      <div className="text-center">
+        {/* Ajoutez ici votre logo ou en-tête */}
+        <h1 className="mt-3">Ajout d'exploitation</h1>
+        <form onSubmit={envoyerDonnees} className="text-center">
+          {/* Ajoutez ici un champ pour le token CSRF si nécessaire */}
+          <div className="form-group">
+            <label htmlFor="id_name_parcelle">Nom de la parcelle</label>
+            <input
+              type="text"
+              name="name_parcelle"
+              maxLength="100"
+              required
+              id="id_name_parcelle"
+              className="form-control"
+              placeholder="Nom de la parcelle"
+              value={donnees.name_parcelle}
+              onChange={handleChange}
+            />
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="id_surface">Surface (en m²)</label>
+            <input
+              type="number"
+              name="surface"
+              required
+              id="id_surface"
+              className="form-control"
+              placeholder="Surface"
+              value={donnees.surface}
+              onChange={handleChange}
+            />
+          </div>
+
+          {/* Ajoutez d'autres champs en fonction de vos besoins */}
+          
+          <button type="submit" className="btn btn-primary">
+            Ajouter Exploitation
+          </button>
+        </form>
+      </div>
+    </div>
+  );
+};
+
+export default AjoutExploitationForm;

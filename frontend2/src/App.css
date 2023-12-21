@@ -1,0 +1,59 @@
+body {
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  height: '100vh';
+  width: '100%'
+}
+
+.bandeau {
+  background-color:#f7f2e4; /* Couleur de fond du bandeau */
+  width: 100%;
+  padding : 20px 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 10000px;
+  margin: 0 auto;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 10px; /* Espace intérieur du bandeau */
+}
+
+.container button {
+  padding: 10px 20px; /* Taille des boutons */
+  margin: 0 80px; /* Espace entre les boutons */
+  font-size: 15px; /* Augmente la taille du texte des boutons */
+  color: #7f3831;
+}
+
+#Logo {
+  padding-left: 15px; /* Ajoute un espace à gauche du logo */
+}
+
+#Logo img {
+  width: 75px; /* Ajuste la largeur du logo */
+  height: auto; /* Hauteur automatique pour maintenir les proportions */
+  margin-right: 15px;
+}
+
+
+
+/* Style spécifique à la carte */
+#map {
+  height: 100vh;
+  width: 100%;
+}
+.validationButton {
+  width: 150px; /* Ajustez la largeur selon vos besoins */
+  height: 40px; /* Ajustez la hauteur selon vos besoins */
+  margin-left: auto; /* Cela place le bouton à droite en utilisant une marge automatique à gauche */
+  display: block; /* Assure que le bouton est affiché en tant que bloc */
+  /* Ajoutez d'autres styles selon vos besoins */
+}
+
